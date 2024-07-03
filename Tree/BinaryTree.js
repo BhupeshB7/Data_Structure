@@ -23,7 +23,7 @@ class BinaryTree {
 
     static preorder(root) {
         if (root === null) return;
-        console.log(root.data + " ");
+        process.stdout.write(root.data + " ");
         BinaryTree.preorder(root.left);
         BinaryTree.preorder(root.right);
     }
@@ -31,7 +31,7 @@ class BinaryTree {
     static inorder(root) {
         if (root === null) return;
         BinaryTree.inorder(root.left);
-        console.log(root.data + " ");
+        process.stdout.write(root.data + " ");
         BinaryTree.inorder(root.right);
     }
 
@@ -39,7 +39,7 @@ class BinaryTree {
         if (root === null) return;
         BinaryTree.postorder(root.left);
         BinaryTree.postorder(root.right);
-        console.log(root.data + " ");
+        process.stdout.write(root.data + " ");
     }
 
     static levelOrder(root) {
