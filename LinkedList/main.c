@@ -1,5 +1,4 @@
 #include "ll.h"
-
 int main(){
     List l1 = createNewList();
    Node n1= createNewListNode(1);
